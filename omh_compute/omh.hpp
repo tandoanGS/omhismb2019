@@ -65,7 +65,7 @@ void omh_pos(const std::string& seq, unsigned k, unsigned l, unsigned m, EngineT
 
 struct sketch { // a data structure that represents a sketch of a DNA sequence
   std::string       name; // holds the name of the sequence
-  unsigned          k, l, m; // 
+  unsigned          k, l, m; // k: kmer-length, l: vector length, m: sketch length
   std::vector<char> data; // a vector of characters that likely holds the sketch data for the original sequence.
   std::vector<char> rcdata; //  a vector of characters that likely holds the sketch data for the reverse complement of the sequence
 
